@@ -1,28 +1,28 @@
 import { Inter } from "next/font/google";
 
 import sites from "../data/sites";
-import clsx from "clsx";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`h-screen flex justify-between flex-col items-center p-20 ${inter.className}`}
+      className={`h-screen flex flex-col items-center p-16 ${inter.className}`}
     >
-      <header className="flex flex-col text-center gap-2 mb-20">
+      <header className="flex flex-col text-center gap-3 mb-16">
         <h1 className="text-4xl font-bold text-center">
-          Welcome to Linear Inspirations
+          Welcome to Vercel Inspirations
         </h1>
 
         <h3 className="text-gray-500">
-          A collection of websites inspired by Linear
+          A collection of websites inspired by Vercel
         </h3>
       </header>
 
       <section className="grid md:grid-cols-2 xl:grid-cols-3 gap-20">
         {sites.map((site) => (
-          <div className="flex flex-col gap-4 items-center" key={site.name}>
+          <div className="flex flex-col gap-6 items-center" key={site.name}>
             <div
               className="relative group hover:scale-105 
             transform transition duration-1000 hover:duration-200 hover:ease-in-out
@@ -34,7 +34,7 @@ export default function Home() {
                   "--tw-gradient-from": site.colors[0],
                   "--tw-gradient-to": site.colors[1],
                 }}
-                className="absolute -inset-0.5 bg-gradient-to-r from-[var(--tw-gradient-from)] to-[var(--tw-gradient-to)] rounded-lg blur-[120px] opacity-25 group-hover:opacity-75 group-hover:blur-xl 
+                className="absolute -inset-0.5 bg-gradient-to-r from-[var(--tw-gradient-from)] to-[var(--tw-gradient-to)] rounded-lg blur-2xl opacity-50 group-hover:opacity-75 group-hover:blur-xl 
                 hover:duration-1000
                 hover:ease-in-out
                 group-hover:animate-pulse
@@ -50,20 +50,16 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            <span className="text-2xl">{site.name}</span>
+            <span className="text-2xl text-gray-400">{site.name}</span>
           </div>
         ))}
       </section>
 
-      {/* <footer className="w-full bg-slate-600 text-center items-center p-5 border-slate-200 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 z-10">
-        <a
-          className="text-white"
-          href="http://birobirobiro.dev"
-          target="_blank"
-        >
+      <footer className="py-5">
+        <a className="text-gray-400" href="https://birobirobiro.dev">
           birobirobiro.dev
         </a>
-      </footer> */}
+      </footer>
     </main>
   );
 }
