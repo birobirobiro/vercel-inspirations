@@ -56,7 +56,11 @@ export default function Home() {
       </section>
 
       <footer className="py-5">
-        <a className="text-gray-400" href="https://birobirobiro.dev">
+        <a
+          className="text-gray-400"
+          href="https://birobirobiro.dev"
+          target="_blank"
+        >
           birobirobiro.dev
         </a>
       </footer>
