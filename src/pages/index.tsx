@@ -30,6 +30,7 @@ export default function Home() {
             >
               <div
                 style={{
+                  // @ts-ignore
                   "--tw-gradient-from": site.colors[0],
                   "--tw-gradient-to": site.colors[1],
                 }}
