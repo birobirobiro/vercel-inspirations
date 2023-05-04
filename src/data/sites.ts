@@ -18,7 +18,7 @@ const sites = [
     colors: ["#543c5d", "#245561"],
   },
   {
-    name: "Mason",
+    name: "Reflect",
     image: "/sites/Reflect.png",
     link: "https://reflect.app/",
     colors: ["#8562ff", "#fa5fff"],
