@@ -53,6 +53,24 @@ const sites = [
     link: "https://stitches.dev/",
     colors: ["#248939", "#876493"],
   },
+  {
+    name: "Volta",
+    image: "/sites/Volta.png",
+    link: "https://volta.net/",
+    colors: ["#1a62ff", "#a855f7"],
+  },
+  {
+    name: "Fig",
+    image: "/sites/Fig.png",
+    link: "https://fig.io/",
+    colors: ["#ff4c88", "#ae6dff"],
+  },
+  {
+    name: "Invoker",
+    image: "/sites/Invoker.png",
+    link: "https://invoker.dev/",
+    colors: ["#66d9fb", "#bd3ff6"],
+  },
 ];
 
 export default sites;
