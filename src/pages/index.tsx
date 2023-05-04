@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 
 import sites from "../data/sites";
-import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +15,25 @@ export default function Home() {
         </h1>
 
         <h3 className="text-gray-500">
-          A collection of websites inspired by Vercel
+          A collection of websites inspired by{" "}
+          <a className="text-gray-400" href="https://vercel.com">
+            Vercel
+          </a>
         </h3>
+
+        <h4 className="text-gray-500">
+          - create by{" "}
+          <a
+            className="text-gray-400"
+            href="https://birobirobiro.dev"
+            target="_blank"
+          >
+            birobirobiro
+          </a>
+        </h4>
       </header>
 
-      <section className="grid md:grid-cols-2 xl:grid-cols-3 gap-20">
+      <section className="grid md:grid-cols-2 xl:grid-cols-3 gap-20 pb-10">
         {sites.map((site) => (
           <div className="flex flex-col gap-6 items-center" key={site.name}>
             <div
@@ -54,16 +67,6 @@ export default function Home() {
           </div>
         ))}
       </section>
-
-      <footer className="py-5">
-        <a
-          className="text-gray-400"
-          href="https://birobirobiro.dev"
-          target="_blank"
-        >
-          birobirobiro.dev
-        </a>
-      </footer>
     </main>
   );
 }
