@@ -20,7 +20,7 @@ export default function Home() {
         </h3>
       </header>
 
-      <section className="grid xl:grid-cols-2 gap-20">
+      <section className="grid md:grid-cols-2 xl:grid-cols-3 gap-20">
         {sites.map((site) => (
           <div className="flex flex-col gap-4 items-center" key={site.name}>
             <div
