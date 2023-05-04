@@ -14,7 +14,7 @@ const sites = [
   {
     name: "Mason",
     image: "/sites/Mason.png",
-    link: "https://mason.app/",
+    link: "https://Mason.app/",
     colors: ["#543c5d", "#245561"],
   },
   {
