@@ -3,7 +3,7 @@ const sites = [
     name: "Raycast",
     image: "/sites/Raycast.png",
     link: "https://raycast.com/",
-    colors: ["#9b4dff", "#e01e5a"],
+    colors: ["#e01e5a", "#55acee"],
   },
   {
     name: "Linear",
@@ -70,6 +70,24 @@ const sites = [
     image: "/sites/Invoker.png",
     link: "https://invoker.dev/",
     colors: ["#66d9fb", "#bd3ff6"],
+  },
+  {
+    name: "Diagram",
+    image: "/sites/Diagram.png",
+    link: "https://diagram.com/",
+    colors: ["#9292af", "#9292af"],
+  },
+  {
+    name: "Evervault",
+    image: "/sites/Evervault.png",
+    link: "https://evervault.com/",
+    colors: ["#6f42c1", "#6610f2"],
+  },
+  {
+    name: "Chronicle",
+    image: "/sites/Chronicle.png",
+    link: "https://chroniclehq.com/",
+    colors: ["#409fd4", "#5940d4"],
   },
 ];
 
